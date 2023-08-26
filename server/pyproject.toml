@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 fastapi = {extras = ["all"], version = "^0.102.0"}
 websockets = "^11.0.3"
+sse-starlette = "^1.6.5"
+asyncio = "^3.4.3"
 
 
 [build-system]

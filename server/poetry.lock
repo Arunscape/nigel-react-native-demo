@@ -32,6 +32,19 @@ test = ["anyio[trio]", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=
 trio = ["trio (<0.22)"]
 
 [[package]]
+name = "asyncio"
+version = "3.4.3"
+description = "reference implementation of PEP 3156"
+optional = false
+python-versions = "*"
+files = [
+    {file = "asyncio-3.4.3-cp33-none-win32.whl", hash = "sha256:b62c9157d36187eca799c378e572c969f0da87cd5fc42ca372d92cdb06e7e1de"},
+    {file = "asyncio-3.4.3-cp33-none-win_amd64.whl", hash = "sha256:c46a87b48213d7464f22d9a497b9eef8c1928b68320a2fa94240f969f6fec08c"},
+    {file = "asyncio-3.4.3-py3-none-any.whl", hash = "sha256:c4d18b22701821de07bd6aea8b53d21449ec0ec5680645e5317062ea21817d2d"},
+    {file = "asyncio-3.4.3.tar.gz", hash = "sha256:83360ff8bc97980e4ff25c964c7bd3923d333d177aa4f7fb736b019f26c7cb41"},
+]
+
+[[package]]
 name = "certifi"
 version = "2023.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -658,6 +671,20 @@ files = [
 ]
 
 [[package]]
+name = "sse-starlette"
+version = "1.6.5"
+description = "\"SSE plugin for Starlette\""
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "sse-starlette-1.6.5.tar.gz", hash = "sha256:819f2c421fb37067380fe3dcaba246c476b02651b7bb7601099a378ad802a0ac"},
+    {file = "sse_starlette-1.6.5-py3-none-any.whl", hash = "sha256:68b6b7eb49be0c72a2af80a055994c13afcaa4761b29226beb208f954c25a642"},
+]
+
+[package.dependencies]
+starlette = "*"
+
+[[package]]
 name = "starlette"
 version = "0.27.0"
 description = "The little ASGI library that shines."
@@ -940,4 +967,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f8ced316466a07562e9d586020e35d7226bf9cef69b6f719c9c4f96295884569"
+content-hash = "9a36d7ee1f3673856cc6b793940aa9df4ab86475b42bc41fe191efd16620ed5f"
